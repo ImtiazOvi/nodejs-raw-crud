@@ -2,9 +2,9 @@
 // dependencies
 const http = require('http');
 const { buffer } = require('stream/consumers');
-const url = require('url');
-const {StringDecoder} = require('string_decoder');
 const{handleReqRes} = require('./helpers/handleReqRes')
+const routes = require('./routes')
+const {notFoundHandler} = require('./handlers/routeHandlers/notFoundHandler')
 
 // app object - module scaffolding
 const app = {};
