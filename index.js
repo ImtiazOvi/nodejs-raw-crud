@@ -13,8 +13,14 @@ const data = require('./lib/data');
 const app = {};
 
 //testing file syetem
-data.create('test', 'newFile', {name: 'Bangladesh', language : 'Bangla'}, (err)=>{
-    console.log(`Error was`, err);
+// wirte file
+// data.create('test', 'newFile', {name: 'Bangladesh', language : 'Bangla'}, (err)=>{
+//     console.log(`Error was`, err);
+// });
+
+// read file
+data.read('test', 'newFile', (err, data) => {
+    console.log((err, data));
 });
 
 // create server
