@@ -23,6 +23,11 @@ data.read('test', 'newFile', (err, data) => {
     console.log((err, data));
 });
 
+// update file
+// data.update('test', 'newFile', {name: 'Englaooondf', language : 'Eoonglishf'}, (err) => {
+//     console.log(err);
+// });
+
 // create server
 app.createServer = () => {
     const server = http.createServer(app.handleReqRes);
