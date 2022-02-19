@@ -6,9 +6,16 @@ const{handleReqRes} = require('./helpers/handleReqRes')
 const evnvironment = require('./helpers/environment')
 const routes = require('./routes')
 const {notFoundHandler} = require('./handlers/routeHandlers/notFoundHandler')
+const data = require('./lib/data');
+
 
 // app object - module scaffolding
 const app = {};
+
+//testing file syetem
+data.create('test', 'newFile', {name: 'Bangladesh', language : 'Bangla'}, (err)=>{
+    console.log(`Error was`, err);
+});
 
 // create server
 app.createServer = () => {
