@@ -19,12 +19,17 @@ const app = {};
 // });
 
 // read file
-data.read('test', 'newFile', (err, data) => {
-    console.log((err, data));
-});
+// data.read('test', 'newFile', (err, data) => {
+//     console.log((err, data));
+// });
 
 // update file
-// data.update('test', 'newFile', {name: 'Englaooondf', language : 'Eoonglishf'}, (err) => {
+data.update('test', 'newFile', {name: 'Bangladesh, Dhaka', language : 'Bangla-Dhakaiya'}, (err) => {
+    console.log(err);
+});
+
+// delete file
+// data.delete('test', 'newFile', (err) => {
 //     console.log(err);
 // });
 
